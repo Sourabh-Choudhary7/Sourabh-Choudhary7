@@ -2,7 +2,7 @@
 <h3 align="center">A passionate full stack developer from India</h3>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Sourabh-Choudhary7&label=Profile%20views&color=0e75b6&style=flat" alt="Sourabh" /> </p>
 
-- 🌱 I’m currently learning **Backend, ExpressJS, DataBase**
+- 🌱 I’m currently learning **Backend with ExpressJS, NodeJs,  DataBases**
 
 - 💬 Ask me about **React js, NodeJS, MongoDB, ExpressJS,**
 
