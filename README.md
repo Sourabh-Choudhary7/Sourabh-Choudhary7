@@ -14,19 +14,16 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             background: linear-gradient(145deg, #f8fafc 0%, #eef2f5 100%);
             font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
             padding: 2rem 1.5rem;
             color: #0a1e2f;
         }
-
         .container {
             max-width: 1100px;
             margin: 0 auto;
         }
-
         /* card style & soft shadows */
         .card {
             background: rgba(255, 255, 255, 0.98);
@@ -37,18 +34,15 @@
             margin-bottom: 2rem;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
         .card:hover {
             transform: translateY(-3px);
             box-shadow: 0 25px 40px -14px rgba(0, 0, 0, 0.12);
         }
-
         /* header area animation + gradient */
         .profile-header {
             text-align: center;
             animation: fadeSlideUp 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
         }
-
         h1 {
             font-size: 2.6rem;
             font-weight: 700;
@@ -60,12 +54,10 @@
             animation: shimmerMove 6s linear infinite;
             letter-spacing: -0.01em;
         }
-
         @keyframes shimmerMove {
             0% { background-position: 0% 50%; }
             100% { background-position: 200% 50%; }
         }
-
         .subtitle {
             font-size: 1.2rem;
             font-weight: 500;
@@ -75,7 +67,6 @@
             padding-bottom: 6px;
             margin-top: 8px;
         }
-
         .view-count {
             display: inline-flex;
             align-items: center;
@@ -90,11 +81,9 @@
             backdrop-filter: blur(2px);
             transition: all 0.2s;
         }
-
         .view-count i {
             font-size: 1rem;
         }
-
         .info-grid {
             display: flex;
             flex-wrap: wrap;
@@ -102,7 +91,6 @@
             margin-top: 1rem;
             justify-content: center;
         }
-
         .info-item {
             background: #f1f5f9;
             border-radius: 60px;
@@ -115,19 +103,16 @@
             color: #0f3b5c;
             transition: 0.2s;
         }
-
         .info-item i {
             font-size: 1.1rem;
             color: #2c7da0;
         }
-
         .social-links {
             display: flex;
             gap: 1.5rem;
             justify-content: center;
             margin: 1.8rem 0 0.5rem 0;
         }
-
         .social-icon {
             background: #ffffff;
             border-radius: 50%;
@@ -142,14 +127,12 @@
             color: #1f4e6e;
             text-decoration: none;
         }
-
         .social-icon:hover {
             transform: translateY(-6px) scale(1.02);
             background: #1f4e6e;
             color: white;
             box-shadow: 0 15px 22px -12px rgba(31,78,110,0.4);
         }
-
         /* tech stack animation (icons pulse softly) */
         .tech-icons {
             display: flex;
@@ -159,25 +142,21 @@
             justify-content: center;
             margin-top: 1rem;
         }
-
         .tech-icons a, .tech-icons span {
             transition: all 0.2s ease;
             display: inline-block;
             animation: floatSoft 3s infinite ease-in-out;
         }
-
         .tech-icons a:hover, .tech-icons span:hover {
             transform: scale(1.1) rotate(2deg);
             filter: drop-shadow(0 8px 12px rgba(0,0,0,0.1));
             animation: none;
         }
-
         @keyframes floatSoft {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-5px); }
             100% { transform: translateY(0px); }
         }
-
         /* stats row - original untouched layout but with subtle fade-in */
         .stats-row {
             display: flex;
@@ -187,24 +166,20 @@
             align-items: flex-start;
             margin-top: 1rem;
         }
-
         .stats-left {
             flex: 1;
             min-width: 240px;
         }
-
         .stats-center {
             flex: 1;
             min-width: 280px;
             text-align: center;
         }
-
         .stats-right {
             flex: 1;
             min-width: 280px;
             text-align: center;
         }
-
         img.stats-img {
             max-width: 100%;
             height: auto;
@@ -213,24 +188,20 @@
             box-shadow: 0 8px 18px rgba(0,0,0,0.05);
             transition: all 0.3s;
         }
-
         img.stats-img:hover {
             transform: scale(1.01);
             box-shadow: 0 14px 28px rgba(0,0,0,0.1);
         }
-
         hr {
             margin: 1.5rem 0;
             border: 0;
             height: 1px;
             background: linear-gradient(90deg, transparent, #9bb6c5, transparent);
         }
-
         .bio-section {
             line-height: 1.55;
             color: #1e2f3e;
         }
-
         .bio-highlight {
             background: #e6f0f7;
             border-left: 5px solid #2c7da0;
@@ -239,7 +210,6 @@
             margin: 1.2rem 0;
             font-weight: 500;
         }
-
         @keyframes fadeSlideUp {
             from {
                 opacity: 0;
@@ -250,7 +220,6 @@
                 transform: translateY(0);
             }
         }
-
         /* responsiveness */
         @media (max-width: 780px) {
             .card {
@@ -267,7 +236,6 @@
                 gap: 0.8rem;
             }
         }
-
         footer {
             text-align: center;
             font-size: 0.75rem;
@@ -282,14 +250,12 @@
     <div class="card profile-header">
         <h1>👋 Hi, I'm Sourabh Choudhary</h1>
         <div class="subtitle">Full Stack Engineer · Scalable Systems · Clean Code</div>
-        
         <!-- animated view counter (still same image but animated container) -->
         <div class="view-count">
             <i class="fas fa-eye"></i>
             <span>Profile visits: </span>
             <img src="https://komarev.com/ghpvc/?username=Sourabh-Choudhary7&label=views&color=0e75b6&style=flat" alt="Sourabh view counter" style="display: inline-block; vertical-align: middle; height: 20px;">
         </div>
-
         <!-- New bio summary (based on LinkedIn content) -->
         <div class="bio-section" style="margin-top: 1.5rem;">
             <p style="font-size: 1.02rem; font-weight: 500;">🚀 <strong>Full Stack Software Engineer</strong> with 2+ years of experience building scalable, high-performance web and mobile applications.</p>
@@ -305,13 +271,11 @@
                 Passionate about solving real-world problems and delivering reliable, user-centric digital solutions.
             </div>
         </div>
-
         <!-- ask me about & learning snippet -->
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 20px 0 10px 0;">
             <span style="background:#eef2ff; border-radius:30px; padding:6px 18px;"><i class="fas fa-code"></i> 💬 Ask me about: React.js, Node.js, MongoDB, Express.js</span>
             <span style="background:#eef2ff; border-radius:30px; padding:6px 18px;"><i class="fas fa-seedling"></i> 🌱 Currently deepening Backend with Express, Node & Databases</span>
         </div>
-
         <!-- Connect section with animations / hover effects -->
         <div class="social-links">
             <a href="https://www.linkedin.com/in/sourabh-choudhary-286281256/" target="_blank" class="social-icon" aria-label="LinkedIn">
@@ -325,7 +289,6 @@
             </a>
         </div>
     </div>
-
     <!-- Languages and Tools (animated icons) -->
     <div class="card">
         <h3 style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
@@ -358,7 +321,6 @@
         </div>
         <p style="font-size: 0.75rem; text-align: center; margin-top: 1.2rem; opacity: 0.7;"><i class="fas fa-magic"></i> Hover over any icon — soft floating animation ✨</p>
     </div>
-
     <!-- STATS SECTION - exactly preserved from original (top-langs, github stats, streak stats) 
          but wrapped with fade animation to respect original but no content change -->
     <div class="card" style="padding-bottom: 1.5rem;">
@@ -379,7 +341,6 @@
         <hr />
         <p style="text-align: center; font-size: 0.85rem; margin-top: 0.5rem;"><i class="fas fa-chart-line"></i> GitHub analytics — realtime stats from your profile</p>
     </div>
-
     <!-- Extra animated pulse section about philosophy / optional -->
     <div class="card" style="background: linear-gradient(115deg, #ffffff, #f9fafb); text-align: center;">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
@@ -407,7 +368,6 @@
         <i class="far fa-copyright"></i> Sourabh Choudhary — Full Stack Developer | Built with 💙 & animated GitHub stats
     </footer>
 </div>
-
 <!-- optional small script to preserve original link behavior and smoothness - no stats modifications -->
 </body>
 </html>
